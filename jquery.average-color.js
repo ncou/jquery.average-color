@@ -24,8 +24,8 @@
             return defaultRGB;
         }
 
-        height = canvas.height = this.naturalHeight || this.offsetHeight || this.height;
-        width = canvas.width = this.naturalWidth || this.offsetWidth || this.width;
+        height = canvas.height = this.naturalHeight || this.offsetHeight || this.height();
+        width = canvas.width = this.naturalWidth || this.offsetWidth || this.width();
 
         context.drawImage(this[0], 0, 0);
 
